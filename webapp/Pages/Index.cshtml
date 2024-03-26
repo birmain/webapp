@@ -5,7 +5,7 @@
 }
 @using Microsoft.Extensions.Configuration
 @inject IConfiguration Configuration
-@Configuration.GetSection("Test")["testvar"]
+@Configuration.GetValue(typeof(string),"testvar")
 
 
 
