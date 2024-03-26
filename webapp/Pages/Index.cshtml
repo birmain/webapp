@@ -3,6 +3,11 @@
 @{
     ViewData["Title"] = "Home page";
 }
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+@Configuration.GetSection("Test")["testvar"]
+
+
 
 <div class="text-center">
     <h1 class="display-4">Welcome deploye from terraform</h1>
